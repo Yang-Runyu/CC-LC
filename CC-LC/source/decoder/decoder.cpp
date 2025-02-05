@@ -15,7 +15,7 @@ using namespace std;
 
 void decodeCU(CodingUnit* pcCU, unsigned char* pImg, int max_cu, int min_cu, int index)
 {
-	//����־λ
+	//śÁąęÖžÎť
 	int loc_row = pcCU->location_row;
 	int loc_col = pcCU->location_col;
 	int h = pcCU->pic_height;
@@ -290,6 +290,8 @@ int main(int argc, char** argv)
 
 	acodec.stop_decoder();
     end = clock();
+    cout << "height: " << pic_height << endl;
+    cout << "width: " << pic_width << endl;
     cout << "time: " << (end - begin) / 1000.0 << " sec" << endl;
 
     write2bin(pic, pic_width*(pic_height*frameNum*(type+2))>>1, fileout);
