@@ -1,0 +1,2 @@
+(mse1 mse4 mse8 mse16 msssim1 msssim4 msssim8 mssism16) 64channels
+(mse32 mse64 msssim32 msssim64) 128channels
